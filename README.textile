@@ -21,11 +21,9 @@ What I want is that the following HTML be added in every page.
 
 <pre>
 <code>
-```html
 <div class="topbar">
     <h1 class="titulo">' + titulo + '</h1><image class="logo" src="images/logo_tegnix.png">
 </div>
-```
 </code>
 </pre>
 
