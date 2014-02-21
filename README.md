@@ -25,4 +25,17 @@ What I want is that the following HTML be added in every page.
 </div>
 ```
 
-This works in the navigator if we place it before the `<section>` labels, but for showing it in every PDF page we must repeat
+This works in the navigator if we place it before the `<section>` labels, but for showing it in every PDF page we must repeat the HTML fragment in every section. 
+So I used the following JQuery code to:
+* insert automatically in every slide, after `<section>` when the URL contains `?print-pdf` (used to get the PDF output)
+* insert only once after `<div class="reveal">` if shown in a navigator
+
+```javascript
+var html_barra = '<div class="topbar"><h1 class="titulo">' + titulo + '</h1><image class="logo" src="images/logo_tegnix.png"></div>';
+if ( window.location.search.match( /print-pdf/gi ) ) {
+    $('section').append(html_barra);
+}
+else {
+    $('div.reveal').append(html_barra);
+}
+```
