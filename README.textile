@@ -2,6 +2,9 @@ h2. Customization of Reveal.js
 
 "Reveal.js":http://lab.hakim.se/reveal-js is a simple HTML framework for creating beautiful and easy to do presentations in HTML5 developed by "Hakim El Hattab":https://github.com/hakimel (thanks you very much, guy!, really good work!)
 
-This project is a customization of "Reveal.js":http://lab.hakim.se/reveal-js for my own purposes. The original Github repository is "here":https://github.com/hakimel/reveal.js, go there for the original README file with an explanation of how to use it.
+This project is a customization of "Reveal.js":http://lab.hakim.se/reveal-js for my own purposes, right now creating presentations for online video courses made for "Tegnix learning platform":https://aula.tegnix.com/.
+
+The original Github repository is "here":https://github.com/hakimel/reveal.js, go there for the original README file with an explanation of how to use it.
 
 The following modifications are done:
+* Added some images under "images" directory: background for blue bar, "Tegnix":http://www.tegnix.com/ and "Creative Commons":http://creativecommons.org/ logo
