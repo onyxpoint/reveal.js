@@ -1,10 +1,10 @@
-h2. Customization of Reveal.js
+## Customization of Reveal.js
 
-"Reveal.js":http://lab.hakim.se/reveal-js is a simple HTML framework for creating beautiful and easy to do presentations in HTML5 developed by "Hakim El Hattab":https://github.com/hakimel (thanks you very much, guy!, really good work!)
+[Reveal.js](http://lab.hakim.se/reveal-js) is a simple HTML framework for creating beautiful and easy to do presentations in HTML5 developed by [Hakim El Hattab](https://github.com/hakimel) (thanks you very much, guy!, really good work!)
 
-This project is a customization of "Reveal.js":http://lab.hakim.se/reveal-js for my own purposes, right now creating presentations for online video courses made for "Tegnix learning platform":https://aula.tegnix.com/.
+This project is a customization of [Reveal.js](http://lab.hakim.se/reveal-js) for my own purposes, right now creating presentations for online video courses made for [Tegnix learning platform](https://aula.tegnix.com.)
 
-The original Github repository is "here":https://github.com/hakimel/reveal.js, go there for the original README file with an explanation of how to use it.
+The original Github repository is [here](https://github.com/hakimel/reveal.js), go there for the original README file with an explanation of how to use it.
 
 The following modifications are done:
 * Added JQuery library
@@ -13,18 +13,16 @@ The following modifications are done:
 * Paper.css is not used. Only pdf.css as printing style
 * Used "sky" as theme. Modifications made in sky_custom.css and pdf_custom.css files
 
-h2. Added header in all pages in PDF output
+## Added header in all pages in PDF output
 
 With Reveal.js there is no way of showing same content in every page (same header/footer, by example) when exporting to pdf. For solving it I have used some JQuery magic in the following way:
 
 What I want is that the following HTML be added in every page. 
 
-<pre>
-<code>
+```html
 <div class="topbar">
     <h1 class="titulo">' + titulo + '</h1><image class="logo" src="images/logo_tegnix.png">
 </div>
-</code>
-</pre>
+```
 
 This works in the navigator if we place it before the @<section>@ labels, but for showing it in every PDF page we must repeat
