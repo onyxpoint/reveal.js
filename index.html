@@ -96,38 +96,17 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
+		
+		
 		<!-- Cargamos JQuery -->
 		<script src="js/jquery-1.11.0.min.js"></script>
+		<!-- Opciones de configuración -->
+		<script src="js/configuration.js"></script>
+                <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+                     https://github.com/hakimel/reveal.js/issues/563 -->
+                <script src="js/align_vertical.js"></script>
 
 		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-			
-			
 
                         // Barra superior
                         var html_barra = '<div class="topbar"><h1 class="titulo">' + titulo + '</h1><image class="logo" src="images/logo_tegnix.png"></div>';
@@ -137,34 +116,6 @@
                         else {
                             $('div.reveal').append(html_barra);
                         }
-                       
-                        // Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
-                        // https://github.com/hakimel/reveal.js/issues/563
-                        function toArray(o) {
-                            return Array.prototype.slice.call(o);
-                        }
-
-                        toArray( document.querySelectorAll( '.reveal .slides section' ) ).forEach(function(slide){
-                            var outerWrapper = document.createElement('div');
-                            if ( window.location.search.match( /print-pdf/gi ) ) {
-                                // Some styles are only applied for PDF printing
-                                outerWrapper.style.cssText = 'display:flex; align-items:center; height:100%';
-                            }
-
-                            var wrapper = document.createElement('div');
-                            wrapper.className = "content";
-                            //wrapper.style.width = '100%';
-                            outerWrapper.appendChild(wrapper);
-
-                            toArray( slide.children ).forEach(wrapper.appendChild, wrapper);
-
-                            if ( window.location.search.match( /print-pdf/gi ) ) {
-                                // Some styles are only applied for PDF printing
-                                slide.style.height = '100%';
-                            }
-                            slide.appendChild(outerWrapper);
-                        });
-                        
                         
  		</script>
 

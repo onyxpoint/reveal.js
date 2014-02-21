@@ -1,0 +1,15 @@
+body {
+/*    width: 100%;*/
+}
+.reveal .slides section {
+    padding: 0 1em !important;
+}
+
+.reveal h2 {
+    font-size: 1.6em;
+}
+
+.reveal div.content {
+    width: 85%;
+    margin: 0 auto;
+}
