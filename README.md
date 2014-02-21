@@ -13,7 +13,7 @@ The following modifications are done:
 * Paper.css is not used. Only pdf.css as printing style
 * Used "sky" as theme. Modifications made in sky_custom.css and pdf_custom.css files
 
-## Added header in all pages in PDF output
+### Added header in all pages in PDF output
 
 With Reveal.js there is no way of showing same content in every page (same header/footer, by example) when exporting to pdf. For solving it I have used some JQuery magic in the following way:
 
@@ -25,4 +25,4 @@ What I want is that the following HTML be added in every page.
 </div>
 ```
 
-This works in the navigator if we place it before the @<section>@ labels, but for showing it in every PDF page we must repeat
+This works in the navigator if we place it before the <code><section></code> labels, but for showing it in every PDF page we must repeat
