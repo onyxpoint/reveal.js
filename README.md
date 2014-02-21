@@ -2,7 +2,9 @@
 
 [Reveal.js](http://lab.hakim.se/reveal-js) is a simple HTML framework for creating beautiful and easy to do presentations in HTML5 developed by [Hakim El Hattab](https://github.com/hakimel) (thanks you very much, guy!, really good work!)
 
-This project is a customization of [Reveal.js](http://lab.hakim.se/reveal-js) for my own purposes, right now creating presentations for online video courses made for [Tegnix learning platform](https://aula.tegnix.com.)
+This project is a customization of [Reveal.js](http://lab.hakim.se/reveal-js) for my own purposes, right now creating presentations for online video courses made for [Tegnix learning platform](https://aula.tegnix.com.).
+
+You can see a demo in [PDF format here](https://github.com/Ciges/reveal.js/blob/master/PDF%20export/presentation.pdf?raw=true)
 
 The original Github repository is [here](https://github.com/hakimel/reveal.js), go there for the original README file with an explanation of how to use it.
 
@@ -50,5 +52,5 @@ For exporting to PDF with reveal.js we must:
 * Open the presentation with *Google Chrome* adding `?print-pdf` to the URL
 * Press `CTRL + p` to launch the Chrome print dialog and save as a PDF file (with no margins)
 
-Et voila!
+Et voila! You can see the [PDF presentation here](https://github.com/Ciges/reveal.js/blob/master/PDF%20export/presentation.pdf?raw=true).
 
