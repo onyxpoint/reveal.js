@@ -25,4 +25,4 @@ What I want is that the following HTML be added in every page.
 </div>
 ```
 
-This works in the navigator if we place it before the <code><section></code> labels, but for showing it in every PDF page we must repeat
+This works in the navigator if we place it before the `<section>` labels, but for showing it in every PDF page we must repeat
