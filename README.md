@@ -42,3 +42,12 @@ else {
 ```
 
 Note that `titulo` is the variable name for title text.
+
+### PDF exporting
+
+For exporting to PDF with reveal.js we must:
+* Open the presentation with *Google Chrome* adding `?print-pdf` to the URL
+* Press `CTRL + p` to launch the Chrome print dialog and save as a PDF file (with no margins)
+
+Et voila!
+
