@@ -19,6 +19,7 @@ With Reveal.js there is no way of showing same content in every page (same heade
 
 What I want is that the following HTML be added in every page. 
 
+<pre>
 <code>
 ```html
 <div class="topbar">
@@ -26,5 +27,6 @@ What I want is that the following HTML be added in every page.
 </div>
 ```
 </code>
+</pre>
 
 This works in the navigator if we place it before the @<section>@ labels, but for showing it in every PDF page we must repeat
