@@ -4,7 +4,7 @@
 
 This project is a customization of [Reveal.js](http://lab.hakim.se/reveal-js) for my own purposes, right now creating presentations for online video courses made for [Tegnix learning platform](https://aula.tegnix.com.).
 
-You can see a **demo in [PDF format here](https://github.com/Ciges/reveal.js/blob/master/PDF%20export/presentation.pdf?raw=true)**.
+You can see a **[live demo of this code here](http://www.ciges.net/revealjs_demo)** and the result of exporting to **[PDF format here](http://github.com/Ciges/reveal.js/blob/master/PDF%20export/presentation.pdf?raw=true)**.
 
 The original Github repository is [here](https://github.com/hakimel/reveal.js), go there for the original README file with an explanation of how to use it.
 
