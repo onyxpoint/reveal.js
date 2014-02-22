@@ -11,6 +11,7 @@ The original Github repository is [here](https://github.com/hakimel/reveal.js), 
 The following modifications are done:
 * Added JQuery library
 * Added some images under "images" directory: background for blue bar, "Tegnix":http://www.tegnix.com/ and "Creative Commons":http://creativecommons.org/ logo
+* Added some jquery code to allow inserting a header in all pages when exporting to pdf
 * Simplified index.html file putting JavaScript code in separate files
 * Paper.css is not used. Only pdf.css as printing style
 * Used "sky" as theme. Modifications made in sky_custom.css and pdf_custom.css files
