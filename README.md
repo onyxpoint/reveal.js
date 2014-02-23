@@ -6,6 +6,8 @@ This project is a customization of [Reveal.js](http://lab.hakim.se/reveal-js) fo
 
 **You can see a [live demo of this code here](http://www.ciges.net/revealjs_demo) and the result of exporting to [PDF format here](http://github.com/Ciges/reveal.js/blob/master/PDF_export/presentation.pdf?raw=true)**.
 
+Also, you can read [here](http://www.ciges.net/presentaciones-buenas-bonitas-y-baratas-y-facilitas-en-html5-con-revealjs) a post (in Spanish) at my web explaining what Reveal.js is, how to use it and why this fork has been developed.
+
 The original Github repository is [here](https://github.com/hakimel/reveal.js), go there for the original README file with an explanation of how to use it.
 
 The following modifications are done:
