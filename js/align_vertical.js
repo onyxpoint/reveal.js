@@ -8,7 +8,7 @@ toArray( document.querySelectorAll( '.reveal .slides section' ) ).forEach(functi
     var outerWrapper = document.createElement('div');
     if ( window.location.search.match( /print-pdf/gi ) ) {
         // Some styles are only applied for PDF printing
-        outerWrapper.style.cssText = 'display:flex; align-items:center; height:100%';
+        outerWrapper.style.cssText = 'display:flex; align-items:center; height:85%';
     }
 
     var wrapper = document.createElement('div');
@@ -24,4 +24,3 @@ toArray( document.querySelectorAll( '.reveal .slides section' ) ).forEach(functi
     }
     slide.appendChild(outerWrapper);
 });
- 

@@ -22,6 +22,14 @@ body {
 .reveal h3 {
     margin-bottom: 0.5em;
 }
+.reveal h3.fin {
+    margin-top: 2em;
+}
+.reveal h3.questions {
+    color:red;
+    font-size: 400%;
+    font-weight: bold;
+}
 
 .reveal code {
     font-size: 82%;
@@ -43,12 +51,31 @@ body {
     margin-top: 10%;
 }
 
+/*  Imágenes  */
+.reveal section img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+/*  Segundo nivel de listas  */
+.reveal ul ul {
+    list-style-type: circle;
+    margin-top: 0.25em;
+}
+
+/*  Código fuente  */
+.reveal pre {
+    font-size: 0.8em;
+}
+
 /*********************************************
  * BARRA SUPERIOR
  ********************************************/
 
 .reveal div.topbar {
-    background: url("../../images/background_bar.png") top left repeat-x;
+    background: url("../../images/background_bar_h100.png") top left repeat-x;
     position: absolute;
     top: 0;
     left: 0;
@@ -66,7 +93,7 @@ body {
     webkit-border-radius: 15px;
     position: absolute;
     top: 0px;
-    right: 2em;
+    right: 1em;
 }
 
 /* Barra superior cuando se imprime */
@@ -79,7 +106,7 @@ body {
   color: white;
   text-shadow: none;
   position: absolute;
-  top: 60px;
+  top: 44px;
   left: 0.5em;
-  font-size: 1em;
+  font-size: 0.8em;
 }

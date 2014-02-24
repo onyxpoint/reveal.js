@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Uso de MongoDB desde lenguajes. Anexos previos al proyecto de final de curso</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -41,83 +41,69 @@
 
 	<body>
 
-		<div class="reveal">
+            <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-			
-                            <!-- ------------------ Diapositiva ------------------ -->
-                            <section>
-                                <h2>Instalación y arranque de la máquina virtual de Tegnix</h2>
-                                <div class="autor">
-                                    <p>@ José M. Ciges - <a href="http://www.ciges.net">Ciges.net</a></p>
-                                    <p style="font-size: small;">Licencia <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Reconocimiento-CompartirIgual 3.0</a></p>
-                                    <img style="border: 0 none" src="images/logoCC.png">
-                                </div>
-                            </section>
-                            <!-- ------------------ Diapositiva ------------------ -->
-                            <section>
-                                <h3>Pasos a seguir</h3>
-                                <ul>
-                                    <li>Descargar el paquete OVA con la máquina virtual desde <a href="https://miservidor.com/files/Aula_Tegnix.ova"><code style="font-size: 60%;">https://miservidor.com/files/Aula_Tegnix.ova</code></a>
-                                    <li class="fragment">Instalar VirtualBox (u otro) desde <a href="http://www.virtualbox.org"><code>www.virtualbox.org</code></a>
-                                    <li class="fragment">Importar el servicio virtualizado
-                                    <li class="fragment">Arrancar la máquina e iniciar sesión con el usuario <em>estudiante</em> y clave <em>estudiante</em>
-                                </ul>
-                            </section>
-                            <!-- ------------------ Diapositiva ------------------ -->
-                            <section>
-                                <h3>Notas para el uso de la máquina virtualizada</h3>
-                                <ul>
-                                    <li>Con la teclas <em>CTRL derecha + f</em> se activa/desactiva la pantalla completa
-                                    <li>Con el comando <strong>sudo</strong> se ejecutan órdenes como <em>root</em>
-                                </ul>
-                                <p style="font-size: smaller;">Convertirnos en <em>root</em></p>
-                                <pre><code>sudo su -</code></pre>
-                                <p style="font-size: smaller;">Abrir una nueva terminal</p>
-                                <pre><code>sudo gnome-terminal</code></pre>
-                            </section>
-                            <!-- ------------------ Diapositiva ------------------ -->
-                            <section>
-                                <h3>Fin de la sesión :-)</h3>
-                                <h4>Próximamente ...</h4>
-                                <ul>
-                                    <li>Instalación de MongoDB
-                                    <li>Instalación de los entornos/drivers para Python y PHP
-                                    <li>Primeros pasos
-                                    <li>Importación de bases de datos de ejemplo
-                                </ul>
-                            </section>
-                            <!-- ------------------ Diapositiva ------------------ -->
+                <div class="slides">
 
-			</div>
+                    <!-- ------------------ Diapositiva ------------------ -->
+                    <section>
+                        <h2>Instalación y arranque de la máquina virtual de Tegnix</h2>
+                        <div class="autor">
+                            <p>@ José M. Ciges - <a href="http://www.ciges.net">Ciges.net</a></p>
+                            <p style="font-size: small;">Licencia <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Reconocimiento-CompartirIgual 3.0</a></p>
+                            <img style="border: 0 none" src="images/logoCC.png">
+                        </div>
+                    </section>
+                    <!-- ------------------ Diapositiva ------------------ -->
+                    <section>
+                        <h3>Pasos a seguir</h3>
+                        <ul>
+                            <li>Descargar el paquete OVA con la máquina virtual desde <a href="https://miservidor.com/files/Aula_Tegnix.ova"><code style="font-size: 60%;">https://miservidor.com/files/Aula_Tegnix.ova</code></a>
+                            <li class="fragment">Instalar VirtualBox (u otro) desde <a href="http://www.virtualbox.org"><code>www.virtualbox.org</code></a>
+                            <li class="fragment">Importar el servicio virtualizado
+                            <li class="fragment">Arrancar la máquina e iniciar sesión con el usuario <em>estudiante</em> y clave <em>estudiante</em>
+                        </ul>
+                    </section>
+                    <!-- ------------------ Diapositiva ------------------ -->
+                    <section>
+                        <h3>Notas para el uso de la máquina virtualizada</h3>
+                        <ul>
+                            <li>Con la teclas <em>CTRL derecha + f</em> se activa/desactiva la pantalla completa
+                            <li>Con el comando <strong>sudo</strong> se ejecutan órdenes como <em>root</em>
+                        </ul>
+                        <p style="font-size: smaller;">Convertirnos en <em>root</em></p>
+                        <pre><code>sudo su -</code></pre>
+                        <p style="font-size: smaller;">Abrir una nueva terminal</p>
+                        <pre><code>sudo gnome-terminal</code></pre>
+                    </section>
+                    <!-- ------------------ Diapositiva ------------------ -->
+                    <section>
+                        <h3>Fin de la sesión :-)</h3>
+                        <h4>Próximamente ...</h4>
+                        <ul>
+                            <li>Instalación de MongoDB
+                            <li>Instalación de los entornos/drivers para Python y PHP
+                            <li>Primeros pasos
+                            <li>Importación de bases de datos de ejemplo
+                        </ul>
+                    </section>
 
-		</div>
+                    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
-		
-		
-		<!-- Cargamos JQuery -->
-		<script src="js/jquery-1.11.0.min.js"></script>
-		<!-- Opciones de configuración -->
-		<script src="js/configuration.js"></script>
-                <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
-                     https://github.com/hakimel/reveal.js/issues/563 -->
-                <script src="js/align_vertical.js"></script>
+                </div>
 
-		<script>
-
-                        // Barra superior
-                        var html_barra = '<div class="topbar"><h1 class="titulo">' + titulo + '</h1><image class="logo" src="images/logo_tegnix.png"></div>';
-                        if ( window.location.search.match( /print-pdf/gi ) ) {
-                            $('section').append(html_barra);
-                        }
-                        else {
-                            $('div.reveal').append(html_barra);
-                        }
-                        
- 		</script>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
 
 	</body>
 </html>

@@ -2,7 +2,7 @@ body {
 /*    width: 100%;*/
 }
 .reveal .slides section {
-    padding: 0 1em !important;
+/*    padding: 0 1em !important; */
 }
 
 .reveal h2 {
@@ -12,4 +12,29 @@ body {
 .reveal div.content {
     width: 85%;
     margin: 0 auto;
+}
+
+.reveal h3 {
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+.reveal h3.questions {
+    color:red;
+    margin-top: 0em;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.reveal h3 {
+    margin-top: 1em;
+}
+
+/*  Imágenes  */
+.reveal section img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    margin: 10px;
 }
